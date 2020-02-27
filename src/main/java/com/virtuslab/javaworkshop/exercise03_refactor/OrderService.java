@@ -18,11 +18,11 @@ TODO: Refactor imperative code to more functional one.
 1. Prepare lazy version of OrderConfirmationRepositoryImpl which will return stream instead of list (Test provided)
 2. Replace lists with streams
 3. Use validation framework from previous exercise if applicable, 
-4. Use Vavr constructs: (vavr is already included in project dependencies),
+4. Apply possibility of partial processing of orders - if one of selections is not available process order partially.
+5. Introduce discount applying - only best discount can be applied when calculating price
+6. Optional: Use Vavr constructs: (vavr is already included in project dependencies),
  - future for handling concurrent executions
  - try for handling exceptions
-5. Apply possibility of partial processing of orders - if one of selections is not available process order partially.
-6. Introduce discount applying - only best discount can be applied when calculating price
  */
 
 @RequiredArgsConstructor
