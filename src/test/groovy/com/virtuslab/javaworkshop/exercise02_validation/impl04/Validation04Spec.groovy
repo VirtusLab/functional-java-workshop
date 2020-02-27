@@ -1,12 +1,10 @@
 package com.virtuslab.javaworkshop.exercise02_validation.impl04
 
-
 import spock.lang.Specification
-import spock.lang.Unroll
 
 class Validation04Spec extends Specification {
 
-    def static validName = "validName"
+    /*def static validName = "validName"
     def static validEmail = "email@email.com"
     def static validAmount = 100.00
     def static validProductId = "12345678901234567890"
@@ -44,5 +42,5 @@ class Validation04Spec extends Specification {
         result.getInvalidFields().get(0).getName() == "amount"
         result.getInvalidFields().get(0).getValue() == -100.00
         
-    }
+    }*/
 }
