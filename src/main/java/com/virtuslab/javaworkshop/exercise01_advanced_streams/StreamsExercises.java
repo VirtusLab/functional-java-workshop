@@ -18,19 +18,9 @@ public class StreamsExercises {
     private Deliveries deliveries;
 
     public Map<String, BigDecimal> calculatePricePerBasketId() {
-        // TODO calculate price per basket id 
+        // TODO return map containing basket price per basket id 
         // return orders.getBaskets() ...
 
-        return null;
-    }
-    
-    public List<Integer> calculateDaysToDeliveryWithMoreThan10Products(String productId) {
-        /*
-          TODO calculate days to delivery with more than 10 products
-          E.g if today is 17-02, and deliveries are: 13pcs. at 20-02, 4pcs. at 21-02, 12pcs. at 23-02
-          it should return: [3, 6]
-          // return deliveries.get(productId) ...
-        */ 
         return null;
     }
     
@@ -48,7 +38,7 @@ public class StreamsExercises {
     }
     
     public Baskets splitBaskets(double splitingAmount) {
-        // TODO using Collectors split Baskets 
+        // TODO using Collectors split baskets into Baskets where cheapIds contains ids of baskets below limit, and expensiveIds contains baskets above limit
         // orders.getBaskets() ...
         return new Baskets(null, null);
     }
@@ -57,6 +47,16 @@ public class StreamsExercises {
     public static class Baskets {
         private String cheapIds;
         private String expensiveIds;
+    }
+
+    public List<Integer> calculateDaysToDeliveryWithMoreThan10Products(String productId) {
+        /*
+          TODO calculate days to delivery with more than 10 products
+          E.g if today is 17-02, and deliveries are: 13pcs. at 20-02, 4pcs. at 21-02, 12pcs. at 23-02
+          it should return: [3, 6]
+        */
+        // return deliveries.get(productId) ...
+        return null;
     }
 
 }
