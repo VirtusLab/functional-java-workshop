@@ -16,11 +16,6 @@ public class Product {
     private String id = UUID.randomUUID().toString();
     private final String name;
     private final Double price;
-
-    public static void main(String[] args) {
-        var priceById = Stream.of(new Product("1", 100.0), new Product("2", 200.0))
-                            .collect(Collectors.toMap(Product::getId, Product::getPrice));
-    }
     
 }
 

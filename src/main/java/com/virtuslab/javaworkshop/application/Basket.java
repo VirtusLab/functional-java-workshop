@@ -1,11 +1,12 @@
 package com.virtuslab.javaworkshop.application;
 
+import lombok.Data;
 import lombok.Value;
 
 import java.util.Set;
 import java.util.UUID;
 
-@Value
+@Data
 public class Basket implements Price {
     
     private final String id;
